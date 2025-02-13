@@ -1,0 +1,56 @@
+---
+//* IMPORTS
+import '../styles/global.css';
+
+import graduslogo from '../assets/logoColores.svg';
+import logodptoelectro from '../assets/logoDptoElectronicaColor.svg';
+import logodptocompu from '../assets/logoDptoComputoColor.svg';
+import logodptocontrol from '../assets/logoDptoControlColor.svg';
+import logodptocomu from '../assets/logoDptoComunicColor.svg';
+import logodptomulti from '../assets/logoDptoMultimediaColor.svg';
+
+import downarrow from '../assets/downArrow.svg';
+
+//* EXPORTS
+export interface Props {
+	title: string;
+	subtitle: string;
+}
+
+const { title = "El Futuro Tecnológico nos une", subtitle = "Juntos redefinimos lo posible" } = Astro.props;
+---
+
+<div id="container">
+    <div id="background">
+        <main id="main-hero">
+            <div id="hero">
+                <img src={graduslogo.src} width="600" height="50" alt="Gradus Technologies" />
+
+                <h1 id="h1-hero">{title}</h1>
+                <p id="p-hero">{subtitle}</p>
+
+                <section id="logos">
+                    <a href="#" target="_blank" rel="noopener">
+                        <img src={logodptoelectro.src} width="60" height="60" alt="Departamento Electronica" />
+                    </a>
+                    <a href="#" target="_blank" rel="noopener">
+                        <img src={logodptocompu.src} width="60" height="60" alt="Departamento Computo" />
+                    </a>
+                    <a href="#" target="_blank" rel="noopener">
+                        <img src={logodptocontrol.src} width="60" height="60" alt="Departamento Control/Robotica" />
+                    </a>
+                    <a href="#" target="_blank" rel="noopener">
+                        <img src={logodptocomu.src} width="60" height="60" alt="Departamento Comunicaciones" />
+                    </a>
+                    <a href="#" target="_blank" rel="noopener">
+                        <img src={logodptomulti.src} width="60" height="60" alt="Departamento Multimedia" />
+                    </a>
+                </section>
+
+                <a id="down-arrow" href="#">
+                    <img src={downarrow.src} width="40" height="40" alt="Down Arrow" />
+                </a>
+            </div>
+        </main>
+    </div>
+</div>
