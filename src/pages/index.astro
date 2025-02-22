@@ -1,12 +1,22 @@
 ---
 //* IMPORTS DE COMPONENTES 
-import Layout from "../layouts/Layout.astro";
 import Hero from "./Hero.astro";
+import Content from "./Content.astro";
+import Base from "./Base.astro";
+import Products from "./Products.astro";
+import Footer from "./Footer.astro";
+import Navbar from "./Navbar.astro";
+import Layout from "../layouts/Layout.astro";
 
 //* IMPORTS DE ESTILOS
 import '../styles/global.css';
 ---
 
 <Layout title="Gradus Technologies">
-	<Hero/>
+	<Navbar />
+	<Hero />
+	<Content />
+	<Base />
+	<Products />
+	<Footer />
 </Layout>
