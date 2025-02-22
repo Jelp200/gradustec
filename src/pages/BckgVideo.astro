@@ -1,0 +1,33 @@
+---
+// IMPORTS
+import "../styles/global.css";
+import videobackground from '../assets/bckg.mp4';
+---
+
+<section class="relative w-full h-screen overflow-hidden">
+    <!-- Video de fondo -->
+    <video
+        class="absolute top-0 left-0 w-full h-full object-cover"
+        autoplay
+        loop
+        muted
+        playsinline
+        src={videobackground}
+    ></video>
+
+    <!-- Contenido superpuesto -->
+    <div class="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center text-white">
+        <h1 class="text-4xl md:text-6xl font-bold mb-4">
+            ¿Tu futuro? Nuestro sueño
+        </h1>
+        <p class="text-lg md:text-2xl mb-6">
+            Todo lo que sueñes nosotros lo hacemos realidad
+        </p>
+        
+        <!-- Botón -->
+        <button class="bg-white text-black px-6 py-2 sm:px-8 sm:py-3 font-semibold hover:bg-black hover:text-white transition-colors duration-300">
+            Más información
+        </button>
+    </div>
+</section>
+
