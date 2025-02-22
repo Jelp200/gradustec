@@ -1,0 +1,176 @@
+---
+// IMPORTS
+import "../styles/global.css";
+
+import logodptoelectro from "../assets/logoDptoElectronicaBN.svg";
+import logodptocompu from "../assets/logoDptoComputoBN.svg";
+import logodptocontrol from "../assets/logoDptoControlBN.svg";
+import logodptocomu from "../assets/logoDptoComunicBN.svg";
+import logodptomulti from "../assets/logoDptoMultimediaBN.svg";
+import logomas from "../assets/logoMasBN.svg";
+import downarrow from "../assets/downArrow.svg";
+---
+
+<div
+    id="container"
+    class="flex flex-col items-center py-24 text-center bg-white"
+>
+    {/* Added bg-white */}
+    <main id="content-Dev-Consult" class="max-w-7xl mx-auto">
+        <h2 class="text-5xl font-medium mt-0">Desarrollo y Consultoría</h2>
+        <p class="text-xl leading-relaxed mt-4 max-w-3xl mx-auto">
+            Innovación en cada etapa: Hardware, Software y Conectividad
+            trabajando juntos para realizar soluciones 360°
+        </p>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-1 mt-12">
+            {/* Responsive grid */}
+            <a href="#" class="group relative">
+                {/* Added relative for absolute positioning of arrow */}
+                <div
+                    class="flex flex-col justify-between items-start bg-white border border-gray-400 p-6 w-105 h-64 transition-transform duration-300 group-hover:bg-purple-600 group-hover:text-white group-hover:border-purple-600"
+                >
+                    {/* Improved styling */}
+                    <p class="text-xl font-medium">
+                        {
+                            /* Removed w-[450px] and added font-medium */
+                        }Electrónica
+                    </p>
+                    <img
+                        src={logodptoelectro.src}
+                        alt="Departamento Electrónica"
+                        class="w-20 h-20 mt-4 transition duration-300 group-hover:invert"
+                    />
+                    {/* Improved styling and transition */}
+                </div>
+                <span
+                    class="absolute bottom-4 right-4 w-8 h-8 rotate-270 transition duration-300 group-hover:invert"
+                >
+                    {/* Absolute positioning */}
+                    <img
+                        src={downarrow.src}
+                        alt="Arrow"
+                        class="w-full h-full"
+                    />
+                </span>
+            </a>
+
+            {
+                /* Repeat the structure for other departments, changing the image and text */
+            }
+            <a href="#" class="group relative">
+                <div
+                    class="flex flex-col justify-between items-start bg-white border border-gray-400 p-6 w-105 h-64 transition-transform duration-300 group-hover:bg-yellow-500 group-hover:text-white group-hover:border-yellow-500"
+                >
+                    <p class="text-xl font-medium">Cómputo</p>
+                    <img
+                        src={logodptocompu.src}
+                        alt="Departamento Cómputo"
+                        class="w-20 h-20 mt-4 transition duration-300 group-hover:invert"
+                    />
+                </div>
+                <span
+                    class="absolute bottom-4 right-4 w-8 h-8 rotate-270 transition duration-300 group-hover:invert"
+                >
+                    <img
+                        src={downarrow.src}
+                        alt="Arrow"
+                        class="w-full h-full"
+                    />
+                </span>
+            </a>
+
+            {
+                /* ... (Repeat for Control/Robótica, Comunicaciones, Multimedia, and "Y mucho más...") */
+            }
+
+            <a href="#" class="group relative">
+                <div
+                    class="flex flex-col justify-between items-start bg-white border border-gray-400 p-6 w-105 h-64 transition-transform duration-300 group-hover:bg-cyan-400 group-hover:text-white group-hover:border-blue-400"
+                >
+                    <p class="text-xl font-medium">Control/Robótica</p>
+                    <img
+                        src={logodptocontrol.src}
+                        alt="Departamento Control/Robótica"
+                        class="w-20 h-20 mt-4 transition duration-300 group-hover:invert"
+                    />
+                </div>
+                <span
+                    class="absolute bottom-4 right-4 w-8 h-8 rotate-270 transition duration-300 group-hover:invert"
+                >
+                    <img
+                        src={downarrow.src}
+                        alt="Arrow"
+                        class="w-full h-full"
+                    />
+                </span>
+            </a>
+
+            <a href="#" class="group relative">
+                <div
+                    class="flex flex-col justify-between items-start bg-white border border-gray-400 p-6 w-105 h-64 transition-transform duration-300 group-hover:bg-green-400 group-hover:text-white group-hover:border-green-400"
+                >
+                    <p class="text-xl font-medium">Comunicaciones</p>
+                    <img
+                        src={logodptocomu.src}
+                        alt="Departamento Comunicaciones"
+                        class="w-20 h-20 mt-4 transition duration-300 group-hover:invert"
+                    />
+                </div>
+                <span
+                    class="absolute bottom-4 right-4 w-8 h-8 rotate-270 transition duration-300 group-hover:invert"
+                >
+                    <img
+                        src={downarrow.src}
+                        alt="Arrow"
+                        class="w-full h-full"
+                    />
+                </span>
+            </a>
+
+            <a href="#" class="group relative">
+                <div
+                    class="flex flex-col justify-between items-start bg-white border border-gray-400 p-6 w-105 h-64 transition-transform duration-300 group-hover:bg-red-500 group-hover:text-white group-hover:border-red-500"
+                >
+                    <p class="text-xl font-medium">Multimedia</p>
+                    <img
+                        src={logodptomulti.src}
+                        alt="Departamento Multimedia"
+                        class="w-20 h-20 mt-4 transition duration-300 group-hover:invert"
+                    />
+                </div>
+                <span
+                    class="absolute bottom-4 right-4 w-8 h-8 rotate-270 transition duration-300 group-hover:invert"
+                >
+                    <img
+                        src={downarrow.src}
+                        alt="Arrow"
+                        class="w-full h-full"
+                    />
+                </span>
+            </a>
+
+            <a href="#" class="group relative">
+                <div
+                    class="flex flex-col justify-between items-start bg-white border border-gray-400 p-6 w-105 h-64 transition-transform duration-300 group-hover:bg-black group-hover:text-white group-hover:border-black"
+                >
+                    <p class="text-xl font-medium">Y mucho más...</p>
+                    <img
+                        src={logomas.src}
+                        alt="Más servicios"
+                        class="w-20 h-20 mt-4 transition duration-300 group-hover:invert"
+                    />
+                </div>
+                <span
+                    class="absolute bottom-4 right-4 w-8 h-8 rotate-270 transition duration-300 group-hover:invert"
+                >
+                    <img
+                        src={downarrow.src}
+                        alt="Arrow"
+                        class="w-full h-full"
+                    />
+                </span>
+            </a>
+        </div>
+    </main>
+</div>

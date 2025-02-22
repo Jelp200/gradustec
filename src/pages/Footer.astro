@@ -1,0 +1,66 @@
+---
+//* IMPORTS
+import "../styles/global.css";
+import logoGradus from "../assets/logoColorFooter.svg";
+---
+
+<footer class="w-full bg-white py-10">
+    <div class="container mx-auto flex justify-between items-start">
+        <!-- Logo -->
+        <div class="flex flex-col items-start">
+            <img
+                src={logoGradus.src}
+                alt="Gradus Technologies Logo"
+                class="h-35 w-auto"
+            />
+        </div>
+
+        <!-- Menús -->
+        <div class="flex gap-12">
+            <!-- Descubre -->
+            <div class="flex flex-col gap-2">
+                <h3 class="text-black font-semibold">Descubre</h3>
+                <a href="#" class="text-gray-400 hover:text-black text-sm"
+                    >Productos</a
+                >
+                <a href="#" class="text-gray-400 hover:text-black text-sm"
+                    >Servicios</a
+                >
+                <a href="#" class="text-gray-400 hover:text-black text-sm"
+                    >JAIme</a
+                >
+                <a href="#" class="text-gray-400 hover:text-black text-sm"
+                    >Defensa</a
+                >
+            </div>
+
+            <!-- Contacto -->
+            <div class="flex flex-col gap-2">
+                <h3 class="text-black font-semibold">Contacto</h3>
+                <a href="#" class="text-gray-400 hover:text-black text-sm"
+                    >Desarrollo GT</a
+                >
+                <a href="#" class="text-gray-400 hover:text-black text-sm"
+                    >Consultoría GT</a
+                >
+                <a href="#" class="text-gray-400 hover:text-black text-sm"
+                    >Soporte</a
+                >
+            </div>
+
+            <!-- Comunidad -->
+            <div class="flex flex-col gap-2">
+                <h3 class="text-black font-semibold">Comunidad</h3>
+                <a href="#" class="text-gray-400 hover:text-black text-sm"
+                    >Desarrolladores</a
+                >
+                <a href="#" class="text-gray-400 hover:text-black text-sm"
+                    >Partners</a
+                >
+                <a href="#" class="text-gray-400 hover:text-black text-sm"
+                    >Impacto Social</a
+                >
+            </div>
+        </div>
+    </div>
+</footer>
